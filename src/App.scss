@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.flexible {
+  display: flex;
+  &.horizontal {
+      flex-direction: row;
+  }
+  &.vertical {
+      flex-direction: column;
+  }
+  &.vertical-reverse {
+      flex-direction: column-reverse;
+  }
+  &.jStart {
+      justify-content: flex-start;
+  }
+  &.jEnd {
+      justify-content: flex-end;
+  }
+  &.jCenter {
+      justify-content: center;
+  }
+  &.jAround {
+      justify-content: space-around;
+  }
+  &.jBetween {
+      justify-content: space-between;
+  }
+  &.aStart {
+      align-items: flex-start;
+  }
+  &.aEnd {
+      align-items: flex-end;
+  }
+  &.aCenter {
+      align-items: center;
+  }
+  &.aCCenter {
+      align-content: center;
+  }
+  &.wrap {
+      flex-wrap: wrap;
+  }
+  &.noWrap {
+      flex-wrap: nowrap;
+  }
+  &.grow {
+      flex-grow: 1;
+  }
+  &.noGrow {
+      flex-grow: 0;
+  }
+  &.shrink {
+      flex-shrink: 1;
+  }
+  &.noShrink {
+      flex-shrink: 0;
+  }
+}
