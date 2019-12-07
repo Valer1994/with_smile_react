@@ -1,0 +1,23 @@
+@import '../../main.scss';
+
+.Header{
+    background-color: $main-color;
+    nav{
+        ul{
+            li{
+                list-style: none;
+                margin: 25px;
+                
+                a{
+                    color: $text-color;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    &:active{
+                        color: 'red'
+                    }
+                }
+            }
+        }
+    }
+}
