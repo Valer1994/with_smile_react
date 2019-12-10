@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
+import { selectLanguage } from '../../translate'
 import './style.scss'
 
 export default class Header extends Component{
@@ -12,13 +13,13 @@ export default class Header extends Component{
                 <nav className='flexible jBetween horizontal'>
                     <ul className="flexible jStart aCCenter ">
                         <li className="flexible aCenter">
-                            <NavLink to='/'>
-                                Home
+                            <NavLink to={'/' + this.props.lang}>
+                                {selectLanguage(this.props.lang).Home}
                             </NavLink>
                         </li>
                         <li className="flexible aCenter">
-                            <NavLink to='/about'>
-                                About
+                            <NavLink to={'/about/' + this.props.lang}>
+                                {selectLanguage(this.props.lang).About}
                             </NavLink>
                         </li>
                         <li className="flexible aCenter">
