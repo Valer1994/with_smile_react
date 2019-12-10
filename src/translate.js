@@ -17,7 +17,7 @@ const languages =  {
         "Plans": "Планы",
         "Blog":"Блог",
         "Contact":"Контакты",
-        "JoinUs":"Join us",
+        "JoinUs":"Присоединяться",
 
     },
     en: {
