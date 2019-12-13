@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Header from './Components/Header/'
 import {
-  BrowserRouter,
   Switch,
   Route,
   withRouter
 } from 'react-router-dom'
+
+import { languages } from './config/config'
 
 import {
   About,
@@ -19,25 +20,32 @@ import {
 import './App.scss';
 
 class App extends Component{
-  render(){
-    console.log('this.props:', this.props)
-    return (
-       <div className="App">
-       <Header 
-         lang={this.props.location.pathname.split('/')[this.props.location.pathname.split('/').length - 1]}
-       />
-         <Switch >
-           <Route exact path='/' component={Home}/>
-           <Route path='/about' component={About}/>
-           <Route path='/blog' component={Blog}/>
-           <Route path='/contact' component={Contact}/>
-           <Route path='/join-us' component={Join_Us}/>
-           <Route path='/plans' component={Plans}/>
-         </Switch>
-       </div>
-   )
+
+  componentWillMount() {
+    const pathname = this.props.history.location.pathname
+    if(Object.keys(languages).includes(pathname.slice(1, 3))) {
+      this.props.history.push(pathname)
+    } else {
+      this.props.history.push('/en');
+    }
   }
- ;
+
+  render(){
+    return (
+      <div className="App">
+        <Header 
+          lang={this.props.history.location.pathname.slice(1, 3)}
+        />
+        <Switch >
+          <Route exact path='/:lang' component={Home}/>
+          <Route path='/:lang/about' component={About}/>
+          <Route path='/:lang/blog' component={Blog}/>
+          <Route path='/:lang/contact' component={Contact}/>
+          <Route path='/:lang/join-us' component={Join_Us}/>
+          <Route path='/:lang/plans' component={Plans}/>
+        </Switch>
+      </div>
+   )};
 }
 
 export default withRouter(App);
