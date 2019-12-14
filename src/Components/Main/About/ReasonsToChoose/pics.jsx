@@ -1,0 +1,6 @@
+export { default as income } from './income.png'
+export { default as support } from './support.png'
+export { default as payment } from './payment.png'
+export { default as use } from './use.png'
+export { default as protect } from './protect.png'
+export { default as affilate } from './affilate.png'

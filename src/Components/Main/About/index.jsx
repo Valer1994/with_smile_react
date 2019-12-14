@@ -1,10 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './style.scss'
+import Video from './Video/index'
+import Reasons from './ReasonsToChoose/index'
 
-export default class About extends Component{
-    render(){
-        return(
-            <div>About us</div>
-        )
-    }
+const About = () => {
+    return <div className='contain flexible vertical aCenter'> 
+        <Reasons />
+        <Video />
+    </div>
+    
 }
+
+export default About;
