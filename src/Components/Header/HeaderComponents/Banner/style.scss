@@ -1,0 +1,78 @@
+.flexible {
+    display: flex;
+    &.horizontal {
+        flex-direction: row;
+    }
+    &.vertical {
+        flex-direction: column;
+    }
+    &.vertical-reverse {
+        flex-direction: column-reverse;
+    }
+    &.jStart {
+        justify-content: flex-start;
+    }
+    &.jEnd {
+        justify-content: flex-end;
+    }
+    &.jCenter {
+        justify-content: center;
+    }
+    &.jAround {
+        justify-content: space-around;
+    }
+    &.jBetween {
+        justify-content: space-between;
+    }
+    &.aStart {
+        align-items: flex-start;
+    }
+    &.aEnd {
+        align-items: flex-end;
+    }
+    &.aCenter {
+        align-items: center;
+    }
+    &.aCCenter {
+        align-content: center;
+    }
+    &.wrap {
+        flex-wrap: wrap;
+    }
+    &.noWrap {
+        flex-wrap: nowrap;
+    }
+    &.grow {
+        flex-grow: 1;
+    }
+    &.noGrow {
+        flex-grow: 0;
+    }
+    &.shrink {
+        flex-shrink: 1;
+    }
+    &.noShrink {
+        flex-shrink: 0;
+    }
+  }
+
+
+.BannerInfo{
+    height: 491px;
+    margin-left: 100px;
+    margin-top: 120px;
+    .BannerMiniTitle{
+        color: #F1481F;
+        font-size: 40px;
+    }
+    .BannerBigTitle{
+        color: #33406A;
+        font-size: 80px;
+    }
+    .BannerText{
+        color: #33406A;
+        font-size: 28px;
+        width: 479px;
+        margin-bottom: 15px;
+    }
+}

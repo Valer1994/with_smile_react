@@ -1,23 +1,118 @@
-@import '../../main.scss';
+// @import '../../main.scss';
+// $TopBarFontColor: #505564;
 
-.Header{
-    background-color: $main-color;
-    nav{
-        ul{
-            li{
-                list-style: none;
-                margin: 25px;
-                
-                a{
-                    color: $text-color;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    &:active{
-                        color: 'red'
+// *{
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+// }
+
+.HeaderMain{
+    width: 100%;
+    background-image: url("./header_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+        .SupportMail{
+               width: 180px;
+                    .MiniIcon{
+                        margin: 0px 5px;
                     }
                 }
+        .LanguageLogin{
+            width: 200px;
+            .Language{
+                .LanguageSelect{
+                    width: 80px;
+                    height: 20px;
+                    background-color: rgba($color: #ffffff, $alpha: 0.1);
+                    border: none;
+                }  
             }
-        }
+            .Login{
+                .LoginIcon{
+                    width: 30px;
+                    height: 30px;
+                    background-color: #CDE0FB;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                }
+            }
+        }      
     }
-}
+
+    .flexible {
+        display: flex;
+        &.horizontal {
+            flex-direction: row;
+        }
+        &.vertical {
+            flex-direction: column;
+        }
+        &.vertical-reverse {
+            flex-direction: column-reverse;
+        }
+        &.jStart {
+            justify-content: flex-start;
+        }
+        &.jEnd {
+            justify-content: flex-end;
+        }
+        &.jCenter {
+            justify-content: center;
+        }
+        &.jAround {
+            justify-content: space-around;
+        }
+        &.jBetween {
+            justify-content: space-between;
+        }
+        &.aStart {
+            align-items: flex-start;
+        }
+        &.aEnd {
+            align-items: flex-end;
+        }
+        &.aCenter {
+            align-items: center;
+        }
+        &.aCCenter {
+            align-content: center;
+        }
+        &.wrap {
+            flex-wrap: wrap;
+        }
+        &.noWrap {
+            flex-wrap: nowrap;
+        }
+        &.grow {
+            flex-grow: 1;
+        }
+        &.noGrow {
+            flex-grow: 0;
+        }
+        &.shrink {
+            flex-shrink: 1;
+        }
+        &.noShrink {
+            flex-shrink: 0;
+        }
+      }
+//     nav{
+//         ul{
+//             li{
+//                 list-style: none;
+//                 margin: 25px;
+                
+//                 a{
+//                     color: $text-color;
+//                     text-decoration: none;
+//                     text-transform: uppercase;
+//                     font-weight: 700;
+//                     &:active{
+//                         color: 'red'
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
