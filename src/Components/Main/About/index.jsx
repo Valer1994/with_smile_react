@@ -1,24 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './style.scss'
-import { selectLanguage } from '../../../translate'
+import Video from './Video/index'
+import Reasons from './ReasonsToChoose/index'
 
-export default class About extends Component{
-    state = {
-        lang: 'ru'
-    }
-
-    componentDidMount(){
-        this.setState({
-            lang: this.props.location.pathname.split('/')[this.props.location.pathname.split('/').length - 1]
-        })
-    }
-
-
-    render(){
-        return(
-            <div>
-                {selectLanguage(this.state.lang).hi}
-            </div>
-        )
-    }
+const About = () => {
+    return <div className='contain flexible vertical aCenter'> 
+        <Reasons />
+        <Video />
+    </div>
+    
 }
+
+export default About;
