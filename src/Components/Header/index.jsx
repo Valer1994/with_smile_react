@@ -25,23 +25,23 @@ class Header extends Component{
                             </NavLink>
                         </li>
                         <li className="flexible aCenter">
-                            <NavLink to='/plans'>
-                                Plans
+                            <NavLink to={'/plans/' + this.props.lang}>
+                                {selectLanguage(this.props.lang).Plans}
                             </NavLink>
                         </li>
                         <li className="flexible aCenter">
-                            <NavLink to='/blog'>
-                                Blog
+                            <NavLink to={'/blog/' + this.props.lang}>
+                                 {selectLanguage(this.props.lang).Blog}
                             </NavLink>
                         </li>
                         <li className="flexible aCenter">
-                            <NavLink to='/contact'>
-                                Contact
+                            <NavLink to={'/contact/' + this.props.lang}>
+                            {selectLanguage(this.props.lang).Contact}
                             </NavLink>
                         </li>
                         <li className="flexible aCenter">
-                            <NavLink to='/join-us'>
-                                Join Us
+                            <NavLink to={'/join-us/' + this.props.lang}>
+                            {selectLanguage(this.props.lang).JoinUs}
                             </NavLink>
                         </li>
                     </ul>
