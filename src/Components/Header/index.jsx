@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink, withRouter } from 'react-router-dom'
 import { selectLanguage } from '../../translate'
+import ControlledOpenSelect from './languages'
 import './style.scss'
 
-export default class Header extends Component{
+class Header extends Component{
     render(){
+        console.log('this.props:', this.props)
         return(
             <header className='Header flexible jAround'>
                 <div>
@@ -43,8 +45,11 @@ export default class Header extends Component{
                             </NavLink>
                         </li>
                     </ul>
+                    <ControlledOpenSelect lang={this.props.lang}/>
                 </nav>
             </header>
         )
     }
 }
+
+export default withRouter(Header);
