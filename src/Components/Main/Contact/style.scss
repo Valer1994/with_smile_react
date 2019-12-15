@@ -1,0 +1,61 @@
+.contactUs{
+    position: relative;
+    margin: 0;
+    .contactBgImg{
+        width: 100%;
+        z-index: 10;
+    }
+    .contactUsWrapper{
+        .messageBoxContainer{
+            position: absolute;
+            top: 120px;
+            left: 250px;
+            z-index: 100;
+            .messageBox{
+                position: relative;
+                width: 320px;
+                height: 350px;
+                background-color: #fff;
+                border-radius: 4px;
+                margin: 20px 0 0 15px;
+                box-shadow: 6px -9px 8px 0px rgba(153,156,226,0.8);
+                p{
+                    color: #33406A;
+                    font-size: 17px;
+                    font-weight: 700;
+                    text-align: left;
+                    padding-left: 30px;
+                    margin: 22px 0 5px;
+                }
+                .submitMessageButton{
+                    width: 115px;
+                    height: 35px;
+                    position: absolute;
+                    left: 25px;
+                    bottom: 5px;
+                    border-radius: 20px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    font-weight: 600;
+                    background-image: linear-gradient(90deg, rgba(227,72,97,1) 0%, rgba(189,78,139,1) 35%, rgba(108,92,229,1) 100%);
+                    box-shadow: 3px -4px 7px 3px rgba(167, 165, 225, 0.8);
+                    padding: 5px;
+                    letter-spacing: 1px;
+                    border: none;
+                    cursor: pointer;
+                }
+                .contactUsImgContainer{
+                    width: 700px;
+                    height: 700px;
+                }
+            }
+        }
+    }
+    .contactIcon{
+        position: absolute;
+        right: 0;
+        top: 120px;
+        width: 700px;
+    }
+}
