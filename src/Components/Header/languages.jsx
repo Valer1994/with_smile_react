@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLocation, useHistory } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -28,9 +29,14 @@ const ControlledOpenSelect = ({ lang }) => {
         <MenuItem value={l}>{languages[l]}</MenuItem>
     ))
   }
+  const location = useLocation()
+  const history = useHistory()
 
   const handleChange = event => {
-    setAge(event.target.value);
+    const language = event.target.value
+    setAge(language);
+    const pathName = location.pathname;
+    history.push('/' + language + pathName.slice(3))
   };
 
   const handleClose = () => {

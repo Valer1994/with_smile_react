@@ -1,11 +1,13 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
+import {selectLanguage} from '../../../../translate'
 import '../style.scss'
 
-const Video = () => {
+const Video = ({lang}) => {
     return <div className='contain flexible vertical aCenter'>
         <div className='textContainer'>   
-            <p className='preHeaderText'>Our amazing features</p>
-            <h2 className='headerText'>Investing for everyone</h2>  
+            <p className='preHeaderText'>{selectLanguage(lang).our_amazing_features}</p>
+            <h2 className='headerText'>{selectLanguage(lang).travel_for_everyone}</h2>  
             <p className='randomText'>We are worldwide investment company who are committed to the principle of revenue maximization and reduction of the financial risks at investing</p>
         </div>
         <div className='mainVideo'>
@@ -14,4 +16,4 @@ const Video = () => {
     </div>
 }
 
-export default Video
+export default withRouter(Video)

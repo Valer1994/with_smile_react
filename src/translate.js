@@ -7,8 +7,8 @@ const languages =  {
         "Blog":"Բլոգ",
         "Contact":"Կապ մեզ հետ",
         "JoinUs":"Միացեք մեզ",
-
-
+        "our_amazing_features": "Մեր բացառիկ առանձնահատկությունները",
+        "travel_for_everyone": "Ճանապարհորդություն բոլորի համար"
     },
     ru: {
         "hi": "Здравствуй",
@@ -18,7 +18,8 @@ const languages =  {
         "Blog":"Блог",
         "Contact":"Контакты",
         "JoinUs":"Присоединяться",
-
+        "our_amazing_features": "Наши удивительные особенности",
+        "travel_for_everyone": "Путешествия для всех"
     },
     en: {
         "hi": "Hi",
@@ -28,7 +29,8 @@ const languages =  {
         "Blog":"Blog",
         "Contact":"Contact",
         "JoinUs":"Join us",
-
+        "our_amazing_features": "OUR AMAZING FEATURES",
+        "travel_for_everyone": "travel for everyone"
     }
 }
 
