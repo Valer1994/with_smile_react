@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './Components/Header/'
 import {
   Switch,
   Route,
-  withRouter
+  withRouter,
+  useLocation,
+  useHistory
 } from 'react-router-dom'
 
 import { languages } from './config/config'
@@ -13,39 +15,58 @@ import {
   Blog,
   Contact,
   Home,
-  Join_Us,
+  JoinUs,
   Plans
 } from './Components/Main'
 
 import './App.scss';
 
-class App extends Component{
+const App = () => {
+  const [lang, setLang] = useState('en')
+  const location = useLocation()
+  const history = useHistory()
 
-  componentWillMount() {
-    const pathname = this.props.history.location.pathname
+  useEffect(() => {
+    const pathname = location.pathname
     if(Object.keys(languages).includes(pathname.slice(1, 3))) {
-      this.props.history.push(pathname)
+      history.push(pathname)
+      setLang(pathname.slice(1, 3))
     } else {
-      this.props.history.push('/en');
+      history.push('/en');
+      setLang('en')
     }
-  }
+  }, [history, lang, location.pathname, setLang])
 
-  render(){
-    return (
+  const routers = <Switch >
+      <Route exact path='/:lang'>
+        <Home lang={lang}/>
+      </Route>
+      <Route path='/:lang/about'>
+        <About lang={lang}/>
+      </Route>
+      <Route path='/:lang/about'>
+        <About lang={lang}/>
+      </Route>
+      <Route path='/:lang/blog'>
+        <Blog lang={lang}/>
+      </Route>
+      <Route path='/:lang/contact'>
+        <Contact lang={lang}/>
+      </Route>
+      <Route path='/:lang/join-us'>
+        <JoinUs lang={lang}/>
+      </Route>
+      <Route path='/:lang/plans'>
+        <Plans lang={lang}/>
+      </Route>
+    </Switch>
+
+  return (
       <div className="App">
-        <Header 
-          lang={this.props.history.location.pathname.slice(1, 3)}
-        />
-        <Switch >
-          <Route exact path='/:lang' component={Home}/>
-          <Route path='/:lang/about' component={About}/>
-          <Route path='/:lang/blog' component={Blog}/>
-          <Route path='/:lang/contact' component={Contact}/>
-          <Route path='/:lang/join-us' component={Join_Us}/>
-          <Route path='/:lang/plans' component={Plans}/>
-        </Switch>
+        <Header lang={lang} />
+        {routers}
       </div>
-   )};
-}
+)};
+
 
 export default withRouter(App);
