@@ -1,24 +1,39 @@
 import React from 'react'
+import { selectLanguage } from '../../../../translate'
 import '../style.scss'
-import { income, support, payment, use, protect, affilate } from './pics.jsx'
+import { icon } from './pics.jsx'
+import { ok } from 'assert'
 
-const Reasons = () => {
+
+
+const Reasons = ({ lang }) => {
+    const pics = [
+        {path: icon, name: 'available_prices'}, 
+        {path: icon, name: 'proffesional_service'}, 
+        {path: icon, name: 'secure_relax'}, 
+        {path: icon, name: 'reliable_staff'}, 
+        {path: icon, name: 'picturesque_places'}, 
+        {path: icon, name: 'tasty_national_food'}, 
+    ]
     
-    const pics = [ income, support, payment, use, protect, affilate ]
-    const picsInWhyChooseUs = () => pics.map((item, ind) =>
-        <div key={ind} className='picsContainers'>
-            <img src={item} alt='why choose us' />
+    
+    
+    const picsInWhyChooseUs = () => pics.map(item => (
+        <div  className='picsContainers'>
+            <img src={item.path} alt='why choose us' />
+            <p>{selectLanguage(lang)[item.name]}</p>
         </div>
-    );
-
+    ));
+    
+   
     return <div className='contain flexible vertical aCenter'>
         <div className='textContainer'>   
-            <p className='preHeaderText'>Boost your money</p>
-            <h2 className='headerText'>Why choose us?</h2>  
-            <p className='randomText'>You can manage your investments from anywhere eihter from home or work place, at any time</p>
+            <p className='preHeaderText'>{selectLanguage(lang).spend_your_money_in_the_right_way}</p>
+            <h2 className='headerText'>{selectLanguage(lang).why_choose_us}</h2>  
+            <p className='randomText'>{selectLanguage(lang).you_can_choose_your_tours_from}</p>
         </div>
         <div className='allReasons flexible horizontal jAround wrap'>
-            {picsInWhyChooseUs()}       
+              {picsInWhyChooseUs()} 
         </div>
     </div>
 }
