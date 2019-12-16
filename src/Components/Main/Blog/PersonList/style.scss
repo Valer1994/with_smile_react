@@ -1,0 +1,18 @@
+.containForPersonList{
+    margin-top: 50px;
+    width: 1110px;
+    box-shadow: -1px 2px 21px -13px rgba(48,39,39,0.8);
+    .infAboutPersonList{
+        background-color: #EEF4FB;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        p{
+            font-weight:bold;
+        }
+    }
+    p{
+        color: #323639; 
+    }
+}
