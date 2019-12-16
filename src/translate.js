@@ -8,7 +8,17 @@ const languages =  {
         "Contact":"Կապ մեզ հետ",
         "JoinUs":"Միացեք մեզ",
         "our_amazing_features": "Մեր բացառիկ առանձնահատկությունները",
-        "travel_for_everyone": "Ճանապարհորդություն բոլորի համար"
+        "travel_for_everyone": "Ճանապարհորդություն բոլորի համար",
+        "spend_your_money_in_the_right_way":"Ծախսեք ձեր գումարը ճիշտ ճանապարհով",
+        "why_choose_us":"Ինչու ընտրել մեզ?",
+        "you_can_choose_your_tours_from":"Դուք կարող եք ընտրել Ձեր ուղևորությունը և տանից, և աշխատավայրից, ցանկացած ժամանակ",
+        "our_tour_company_can_implement_all_your_imaginations":"Մեր տուրիստական կազմակերպությունը կարող է իրականացնել Ձեր բոլոր պատկերացումները",
+        "available_prices":"Մատչելի Գներ",
+        "proffesional_service":"Պռոֆեսիոնալ Սպասարկում",
+        "secure_relax":"Անվտանգ Հանգիստ",
+        "reliable_staff":"Վստահելի Անձնակազմ",
+        "picturesque_places":"Գեղատեսիլ Վայրեր",
+        "tasty_national_food":"Համեղ Ազգային Սնունդ",
     },
     ru: {
         "hi": "Здравствуй",
@@ -19,7 +29,17 @@ const languages =  {
         "Contact":"Контакты",
         "JoinUs":"Присоединяться",
         "our_amazing_features": "Наши удивительные особенности",
-        "travel_for_everyone": "Путешествия для всех"
+        "travel_for_everyone": "Путешествия для всех",
+        "spend_your_money_in_the_right_way":"Тратьте свои деньги правильно!",
+        "why_choose_us":"Почему выбрать нас?",
+        "you_can_choose_your_tours_from":"Вы можете выбрать Вашу поездку и из дома,и из места работы в любое время",
+        "our_tour_company_can_implement_all_your_imaginations":"Наше туристическое агентство может осуществлять все ваши воображения",
+        "available_prices":"Выгодные Цены",
+        "proffesional_service":"Профессиональное Обслуживание",
+        "secure_relax":"Безопасный Отдых",
+        "reliable_staff":"Надежный Коллектив",
+        "picturesque_places":"Колоритные Места",
+        "tasty_national_food":"Вкусная Национальная Еда",
     },
     en: {
         "hi": "Hi",
@@ -30,7 +50,18 @@ const languages =  {
         "Contact":"Contact",
         "JoinUs":"Join us",
         "our_amazing_features": "OUR AMAZING FEATURES",
-        "travel_for_everyone": "travel for everyone"
+        "travel_for_everyone": "travel for everyone",
+        "spend_your_money_in_the_right_way": "Spend your money in the right way",
+        "why_choose_us":"Why choose us?",
+        "you_can_choose_your_tours_from":"You can choose your tours from anywhere eihter from home or work place, at any time",
+        "our_tour_company_can_implement_all_your_imaginations":"Our tour company can implement all your imaginations",
+        "available_prices":"AVAILABLE PRICES",
+        "proffesional_service":"PROFFESIONAL SERVICE",
+        "secure_relax":"SECURE RELAX",
+        "reliable_staff":"RELIABLE STAFF",
+        "picturesque_places":"PICTURESQUE PLACES",
+        "tasty_national_food":"TASTY NATIONAL FOOD",
+        
     }
 }
 
