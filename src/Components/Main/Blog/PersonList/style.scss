@@ -1,18 +1,67 @@
 .containForPersonList{
-    margin-top: 50px;
-    width: 1110px;
-    box-shadow: -1px 2px 21px -13px rgba(48,39,39,0.8);
-    .infAboutPersonList{
-        background-color: #EEF4FB;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px;
-        p{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    .containForButtons{
+            margin-top: 50px;
+            width: 53%;
+            min-height: 85px;
+            border: 1px solid #FF5500;
+            border-radius: 42.5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-weight: bold;
+            box-sizing: border-box;
+         button{
+            color: white;
             font-weight:bold;
+            margin: 3px;
+            cursor: pointer;
+            border:none;
+            }
+        .lastreviewes{
+                width: 200px;
+                height: 60px;
+                background-image: linear-gradient(90deg, rgba(227,72,97,1) 0%, rgba(189,78,139,1) 35%, rgba(108,92,229,1) 100%);
+                border-radius: 30px;
+                box-shadow: 3px -4px 7px 3px rgba(167, 165, 225, 0.8);
+            }
+        .allreviewes{
+                width: 240px;
+                height: 60px;
+                background-color: #FF5500;
+                border-radius: 30px;
+            }
+        .topreviews{
+                width: 200px;
+                height: 60px;
+                background-color: #FF5500;
+                border-radius: 30px;
+            }
         }
-    }
-    p{
-        color: #323639; 
+    
+    .forPersonList{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 80%;
+        box-shadow: 6px -9px 8px 0px rgba(153,156,226,0.8);
+        .infAboutPersonList{
+            background-color: #EEF4FB;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 40px;
+            padding-right: 60px;
+            p{
+                font-weight:bold;
+            }
+        }
+        p{
+            color: #323639; 
+        }
     }
 }

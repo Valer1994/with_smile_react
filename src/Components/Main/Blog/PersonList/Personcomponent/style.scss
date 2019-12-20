@@ -3,38 +3,59 @@
     height: 100px;
     padding: 10px;
     display: flex;
-    justify-content:space-around;
     align-items: center;
     flex-wrap: wrap;
     box-sizing: border-box;
     background-color: #ffffff;
-    border-bottom: 1px solid #9D9A9A;
-    
-   
-    .personprofile{
-        margin-right: 10px;
+    border-bottom: 1px solid #F5F5F5;
+    list-style: none;
+
+&:hover{
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         box-sizing: border-box;
+        background-color:#EFE9E9;
+        border-bottom: 1px solid #F5DCD0;
+        border-top: 1px solid #F5DCD0;
+}
+
+    .personprofile{
+        display:flex;
+        box-sizing: border-box;
+        justify-content: center;
+        margin-right: 8px;
         width: 60px;
-        height:  60px;
+        height: 60px;
         border-radius: 50%;
         background-color: #A5A5A5;
         border: 1px solid #707070;
         
     }
 
-    .ameAndSureName{
-      flex: 1;
+    .nameAndSureName{ 
+        width: 20%;
+        display:flex;
+        justify-content: flex-start;
+
     }
 
     .date{
-        flex: 1;
+        display:flex;
+        justify-content: flex-end;
+        width: 10%;
     }
 
     .commentPlace{
-        flex:2;
+        display:flex;
+        justify-content: center;
+        width: 56%;
     }
     .likesicon{
         width: 20px;
-        height: 20px;
+        height:  20px;
     }
 }
