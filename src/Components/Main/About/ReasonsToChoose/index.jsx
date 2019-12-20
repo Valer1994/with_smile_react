@@ -2,7 +2,6 @@ import React from 'react'
 import { selectLanguage } from '../../../../translate'
 import '../style.scss'
 import { icon } from './pics.jsx'
-import { ok } from 'assert'
 
 
 
