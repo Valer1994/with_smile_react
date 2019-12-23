@@ -21,6 +21,11 @@ import {
 
 import './App.scss';
 
+
+
+
+import { createStore } from 'redux'
+
 const App = () => {
   const [lang, setLang] = useState('en')
   const location = useLocation()
@@ -67,6 +72,37 @@ const App = () => {
         {routers}
       </div>
 )};
+
+const initialState = {
+  name: 'Mika',
+  surname: 'Gevorgyan'
+}
+
+const counter = (state = initialState, action) => {
+  switch (action.type) {
+    case 'NAME':
+      return { ...state, name: action.payload}
+    case 'SURNAME':
+      return { ...state, surname: action.payload}
+    default:
+      return state
+  }
+}
+
+const name = {
+  type: 'NAME',
+  payload: 'Valod'
+}
+
+const surname = {
+  type: 'SURNAME',
+  payload: 'Vaxarshyan'
+}
+
+const store = createStore(counter)
+
+store.dispatch( { type: 'NAME', payload: 'Vaxarshik' } )
+store.dispatch(surname)
 
 
 export default withRouter(App);

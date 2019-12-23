@@ -1,10 +1,18 @@
-import React, { Component } from 'react';
-import './style.scss'
+import React from 'react';
+import BlogsHeader from './BlogsHeader/index';
+import PersonLists from './PersonList/index'
+import './style.scss';
 
-export default class About extends Component{
-    render(){
-        return(
-            <div>Blog</div>
-        )
-    }
+
+const Blog = ({ lang }) => {
+    return(
+        <div  className='contain_blog'>
+            <BlogsHeader lang={lang}/>
+            <PersonLists lang={lang}/>
+        </div>
+    )
 }
+
+
+
+export default Blog;
