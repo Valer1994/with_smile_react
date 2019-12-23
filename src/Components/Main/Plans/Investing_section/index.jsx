@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './style.scss';
-import videoImitationImage from '../../../../assests/video_imitation.png'
+import { videoImitationImage } from '../../../../assets/'
 
 export default class Investing_section extends Component{
     render(){
@@ -10,11 +10,11 @@ export default class Investing_section extends Component{
                     <div className="text_part">
                         <h2>OUR AMAZING FEATURES</h2>
                         <h1>INVESTING FOR EVERYONE</h1>
-                        <p>We are worldwide investiment company who are commited to the principle of revenue <br/> 
+                        <p>We are worldwide investment company who are commited to the principle of revenue <br/> 
                         maximization and reduction of the financial risks at investing.
                         </p>
                     </div>
-                    <img src={videoImitationImage} className="image_part" />
+                    <img src={videoImitationImage} className="image_part" alt="videoImitationImage"/>
                 </div>
             </div>
         )     

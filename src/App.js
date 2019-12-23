@@ -20,6 +20,7 @@ import {
 } from './Components/Main'
 
 import './App.scss';
+import './media.scss';
 
 
 

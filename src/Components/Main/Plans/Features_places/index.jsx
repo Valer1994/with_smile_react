@@ -10,7 +10,7 @@ export default class Features_places extends Component{
                     <div className="text_part">
                         <h2>EXPLORE TOP DESTINATION</h2>
                         <h1>OUR FEATURES PLACES</h1>
-                        <p>We are worldwide investiment company who are commited to the principle of revenue <br/> 
+                        <p id="media_text">We are worldwide investiment company who are commited to the principle of revenue <br/> 
                         maximization and reduction of the financial risks at investing.
                         </p>
                     </div>
