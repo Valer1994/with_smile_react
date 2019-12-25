@@ -26,7 +26,7 @@ const ControlledOpenSelect = ({ lang }) => {
 
   const createOurLanguages = (languages) => {
     return Object.keys(languages).map(l => (
-        <MenuItem value={l}>{languages[l]}</MenuItem>
+        <MenuItem key={l} value={l}>{languages[l]}</MenuItem>
     ))
   }
   const location = useLocation()

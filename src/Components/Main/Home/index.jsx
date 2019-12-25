@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import './style.scss'
+import BannerInfo from './Banner/BannerInfo/display';
+import Banner from './Banner/';
+ 
+import './style.scss';
 
-export default class About extends Component{
-    render(){
-        return(
-            <div>Home</div>
-        )
-    }
+const Home = ({lang}) => {
+    return <div className='Home flexible vertical aCenter'> 
+            <Banner />  
+            <BannerInfo /> 
+        </div>
 }
+
+export default Home;

@@ -19,7 +19,7 @@ const Reasons = ({ lang }) => {
     
     
     const picsInWhyChooseUs = () => pics.map(item => (
-        <div  className='picsContainers'>
+        <div key={item}  className='picsContainers'>
             <img src={item.path} alt='why choose us' />
             <p>{selectLanguage(lang)[item.name]}</p>
         </div>
