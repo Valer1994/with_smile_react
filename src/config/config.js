@@ -1,7 +1,7 @@
 const languages = {
-    'en': 'English',
-    'ru': 'Russian',
-    'am': 'Armenian'
+    en: 'English',
+    ru: 'Russian',
+    am: 'Armenian'
 }
 
 export {
