@@ -2,7 +2,6 @@ import React from 'react'
 import { selectLanguage } from '../../../../translate'
 import '../style.scss'
 import { icon } from './pics.jsx'
-import { ok } from 'assert'
 
 
 
@@ -19,7 +18,7 @@ const Reasons = ({ lang }) => {
     
     
     const picsInWhyChooseUs = () => pics.map(item => (
-        <div key={item}  className='picsContainers'>
+        <div key={item.toString()} className='picsContainers'>
             <img src={item.path} alt='why choose us' />
             <p>{selectLanguage(lang)[item.name]}</p>
         </div>

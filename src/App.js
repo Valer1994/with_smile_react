@@ -21,22 +21,39 @@ import {
 
 import './App.scss';
 
+// import { createStore, combineReducers } from 'redux'
+
+// const routesList = [
+//   {
+//     isExact: true,
+//     path: '/:lang',
+//     Comp: Home
+//   }
+// ]
+
 const App = () => {
-  const [lang, setLang] = useState('en')
   const location = useLocation()
   const history = useHistory()
-
+  const pathname = location.pathname
+  const langPathName = pathname.slice(1, 3)
+  const [lang, setLang] = useState('en')
+  console.log(pathname)
   useEffect(() => {
-    const pathname = location.pathname
-    if(Object.keys(languages).includes(pathname.slice(1, 3))) {
+    if(languages[langPathName]) {
       history.push(pathname)
-      setLang(pathname.slice(1, 3))
+      setLang(langPathName)
     } else {
       history.push('/en');
       setLang('en')
     }
-  }, [history, lang, location.pathname, setLang])
+  }, [history, lang, langPathName, location.pathname, pathname, setLang])
 
+  // const list = routesList.map(({ path, isExact, Comp }) => {
+  //   return (<Route exact={isExact} path={path}>
+  //   <Comp lang={lang}/>
+  // </Route>)
+  // })
+  console.log(lang)
   const routers = <Switch >
       <Route exact path='/:lang'>
         <Home lang={lang}/>
@@ -68,5 +85,33 @@ const App = () => {
       </div>
 )};
 
+// const initialState = {
+//   name: 'Mika',
+//   surname: 'Gevorgyan',
+//   age: 13,
+//   salary: 13000
+// }
+
+// const counter = (state = initialState, action) => {
+//   switch (action.type) {
+//     case 'NAME':
+//       return { ...state, name: action.payload}
+//     case 'SURNAME':
+//       return { ...state, surname: action.payload}
+//     default:
+//       return state
+//   }
+// }
+
+// const counterBlog = (state = initialState, action) => {
+//   switch (action.type) {
+//     case 'AGE':
+//       return { ...state, age: action.payload + state.age}
+//     case 'SALARY':
+//       return { ...state, salary: action.payload * state.salary}
+//     default:
+//       return state
+//   }
+// }
 
 export default withRouter(App);
