@@ -2,7 +2,7 @@
     background-color: #ffffff;
     .featureSectionBack{
         width: 100%;
-        background: url("../../../../assets/features_background1.png") no-repeat;
+        background: url("../../../../assets/features_background.png") no-repeat;
         background-size: contain;
         display: flex;
         flex-direction: column;
@@ -38,13 +38,14 @@
                     text-align: center;
             }
     }
-    .featureSectionBack2{
-        width: 100%;
-        background: url("../../../../assets/features_background2.png") no-repeat;
-        background-size: contain;
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        min-height: 712px;
-    }
+    // .featureSectionBack2{
+    //     width: 100%;
+        
+    //     background: url("../../../../assets/features_background2.png") no-repeat;
+    //     background-size: contain;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center; 
+    //     min-height: 712px;
+    // }
 }

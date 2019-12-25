@@ -1,5 +1,20 @@
 @media screen and (max-width: 500px) {
-  #media_text {
-    color: red;
+   #media_featureSectionBack{
+    width: 100%;
+    background: url("./assets/features_background1.png") no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    min-height: 712px;
+  }
+  #media_featureSectionBack2{
+    width: 100%;
+    background: url("./assets/features_background2.png") no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    min-height: 712px;
   }
 }

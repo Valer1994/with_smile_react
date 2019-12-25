@@ -6,17 +6,17 @@ export default class Features_places extends Component{
      render(){
             return (
             <div className="featureSection">
-                <div className="featureSectionBack">
+                <div className="featureSectionBack" id="media_featureSectionBack">
                     <div className="text_part">
                         <h2>EXPLORE TOP DESTINATION</h2>
                         <h1>OUR FEATURES PLACES</h1>
-                        <p id="media_text">We are worldwide investiment company who are commited to the principle of revenue <br/> 
+                        <p>We are worldwide investiment company who are commited to the principle of revenue <br/> 
                         maximization and reduction of the financial risks at investing.
                         </p>
                     </div>
                     <Picture/>
                 </div> 
-                <div className="featureSectionBack2">
+                <div className="featureSectionBack2" id="media_featureSectionBack2">
                 </div> 
             </div>
         )     
