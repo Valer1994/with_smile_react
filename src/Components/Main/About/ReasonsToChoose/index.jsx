@@ -1,24 +1,24 @@
 import React from 'react'
 import { selectLanguage } from '../../../../translate'
-import '../style.scss'
-import { icon } from './pics.jsx'
+import './style.scss'
+import { pic } from './pics.jsx'
 
 
 
 const Reasons = ({ lang }) => {
     const pics = [
-        {path: icon, name: 'available_prices'}, 
-        {path: icon, name: 'proffesional_service'}, 
-        {path: icon, name: 'secure_relax'}, 
-        {path: icon, name: 'reliable_staff'}, 
-        {path: icon, name: 'picturesque_places'}, 
-        {path: icon, name: 'tasty_national_food'}, 
+        {path: pic, name: 'available_prices'}, 
+        {path: pic, name: 'proffesional_service'}, 
+        {path: pic, name: 'secure_relax'}, 
+        {path: pic, name: 'reliable_staff'}, 
+        {path: pic, name: 'picturesque_places'}, 
+        {path: pic, name: 'tasty_national_food'}, 
     ]
     
     
     
-    const picsInWhyChooseUs = () => pics.map(item => (
-        <div key={item.toString()} className='picsContainers'>
+    const picsInWhyChooseUs = () => pics.map((item,ind) => (
+        <div key={ind} className='picsContainers'>
             <img src={item.path} alt='why choose us' />
             <p>{selectLanguage(lang)[item.name]}</p>
         </div>
