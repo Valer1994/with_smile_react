@@ -1,6 +1,6 @@
 import React from 'react';
-import BlogsHeader from './BlogsHeader/index';
-import PersonLists from './PersonList/index'
+import BlogsHeader from './Information/index';
+import PersonLists from './PersonList/index';
 import './style.scss';
 
 

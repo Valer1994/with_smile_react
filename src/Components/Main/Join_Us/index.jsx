@@ -1,31 +1,19 @@
-import React, { Component, createRef, useRef } from 'react';
-// import Person from './person'
-import Aux from '../../../hoc/List'
-import './style.scss'
+import React from 'react';
+import Inform from './secnondInformation/index'
+import Reviewers from './secondReviewerList/index'
+import './style.scss';
 
-const JoinUs = () => {
-    const myRef = useRef(null)
-    console.log('myRef:', myRef)
-    return(
-        <Aux>
-            <div>
-                ehkfef
-            </div>
-            <div>
-                ehkfef
-            </div>
-            {/* <div ref={(refs) => this.myRef(refs)}> */}
-            <div ref={myRef}>
-                ehkfef
-            </div>
-            <div>
-                ehkfef
-            </div>
-        </Aux>
+
+const SeconBlog = ({ lang }) => {
+    return (
+        <div className='Contain_of_reviewer_page'>
+            <Inform lang={lang} />
+            <Reviewers lang={lang} />
+        </div>
     )
 }
 
-export default JoinUs
+export default SeconBlog;
 
 
 // import { connect } from 'react-redux'
