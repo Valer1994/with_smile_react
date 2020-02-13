@@ -1,8 +1,9 @@
-import React from 'react'
-import {selectLanguage} from '../../../translate'
+import React from 'react';
+import { selectLanguage } from '../../../translate';
+import { contactIcon, contactBgImage } from '../../../../src/images/index';
+import BasicTextFields from './input/index';
+
 import './style.scss'
-import { contactIcon, contactBgImage } from '../../../../src/images/index'
-import BasicTextFields from './input/index'
 
 const Contact = ({lang}) => {
 

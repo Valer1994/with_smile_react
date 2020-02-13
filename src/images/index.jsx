@@ -6,6 +6,7 @@ export { default as Security } from './Security.png';
 export { default as Transparent } from './transparent.png';
 export { default as Simple } from './Simple.png';
 export { default as Compliant } from './Compliant.png';
-export { default as BeckgroundAbout } from './BackgroundAbout.png'
+export { default as BeckgroundAbout } from './BackgroundAbout.png';
+export { default as Smile } from './smile.jpg'
 
 

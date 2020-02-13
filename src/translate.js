@@ -43,6 +43,10 @@ const languages =  {
         "transparency":"թափանցիկություն",
         "simple":"պարզ",
         "compliant":"զիջող",
+        "travel_to_armenia":"ճամփորդեք դեպի հայաստան",
+        "choose_your_tour":"Ընտրեք Ձեր Հանգիստը",
+        "get_the_most_comfortable_and_affordable_tours_with_us":"Ստացեք ամենհարմարավետ և մատչելի հանգիստը,ՄԵԶ ՄՈՏ",
+        "choose_tour":"ընտրել հանգիստ",
     },
     ru: {
         "hi": "Здравствуй",
@@ -88,6 +92,10 @@ const languages =  {
         "transparency":"прозрачность",
         "simple":"ясный",
         "compliant":"уступающий",
+        "travel_to_armenia":"Путешествуйте в Армению",
+        "choose_your_tour":"Выбирайте свой тур",
+        "get_the_most_comfortable_and_affordable_tours_with_us":"Получите самый удобный и доступный отдых у Нас",
+        "choose_tour":"выбрать тур",
     },
     en: {
         "hi": "Hi",
@@ -133,6 +141,10 @@ const languages =  {
         "transparency":"transparency",
         "simple":"simple",
         "compliant":"compliant",
+        "travel_to_armenia":"travel to armenia",
+        "choose_your_tour":"Choose Your Tour",
+        "get_the_most_comfortable_and_affordable_tours_with_us":"Get the most Comfortable and Affordable tours With Us",
+        "choose_tour":"choose tour",
     }
 }
 

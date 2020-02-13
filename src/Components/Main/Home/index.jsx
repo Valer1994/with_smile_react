@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
-import BannerInfo from './Banner/BannerInfo/display';
-import Banner from './Banner/';
+import React from 'react';
+import Paper from '../../Atoms/Paper';
+import HomePageText from './HomePageText';
  
 import './style.scss';
 
 const Home = ({lang}) => {
-    return <div className='Home flexible vertical aCenter'> 
-            <Banner />  
-            <BannerInfo /> 
-        </div>
+    return  <Paper className='Home'>
+                <HomePageText lang={lang}/>
+            </Paper>
 }
 
 export default Home;
+
+
 // import React, { useState, useEffect } from 'react';
 // import './style.scss'
 
