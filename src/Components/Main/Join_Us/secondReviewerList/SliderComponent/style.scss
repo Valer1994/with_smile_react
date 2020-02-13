@@ -1,0 +1,31 @@
+.contain_of_slider{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    .arrow_left_div{
+        width: 150px;
+        .left_arrow{
+            cursor: pointer;
+            transform: rotate(180deg);
+            margin-top: 13px;
+        }
+    }
+    .arrow_right_div{
+        width: 150px;
+        .right_arrow{
+            cursor: pointer;
+            margin-top: 13px;
+        }
+    }
+    .reviewer_image_case{
+        width: 150px;
+        .reviewer_image{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+    }
+
+}

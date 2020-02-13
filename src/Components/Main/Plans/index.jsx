@@ -4,7 +4,7 @@ import './style.scss'
 export default class About extends Component{
     render(){
         return(
-            <div>Plans</div>
+            <div >Plans</div>
         )
     }
 }

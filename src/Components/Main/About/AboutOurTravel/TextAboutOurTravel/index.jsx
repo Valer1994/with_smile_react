@@ -1,5 +1,6 @@
 import React from 'react';
 import { selectLanguage } from '../../../../../translate';
+
 import './style.scss';
 
 const TextAboutOurTravel = ({ lang }) => {

@@ -4,10 +4,15 @@
     background-image: url(../../../images/Header.png);
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     &::before{
         content: '';
-        display: block;
-        width: 100%;
+        position: absolute;
+        right: 0;
+        width: inherit;
+        display: inline-block;
         height: inherit;
         background-image: url(../../../images/Bannerbg.png);
         background-size: 60%;
