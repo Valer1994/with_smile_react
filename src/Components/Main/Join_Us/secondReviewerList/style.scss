@@ -1,0 +1,29 @@
+.second_reviewer{
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    width: 40%;
+    margin-top: 40px;
+    .reviewers_inform{
+        display: flex;
+        flex-direction: column;
+        .case_about_reviewer_inform{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .review{
+                height: 50px;
+                color: #484748;
+                font-size: 18px;
+            }
+            .reviewerProfile{
+                height: 70px;
+            }
+            .name_surname{
+                color: #F1481F;
+                font-size: 22px;
+            }
+        }
+    }
+
+}

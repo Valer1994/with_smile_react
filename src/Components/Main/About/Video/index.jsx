@@ -1,7 +1,7 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
 import {selectLanguage} from '../../../../translate'
-import '../style.scss'
+import './style.scss'
 
 const Video = ({lang}) => {
     return <div className='contain flexible vertical aCenter'>

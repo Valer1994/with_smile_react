@@ -1,11 +1,13 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom'
+import Video from './Video/index';
+import Reasons from './ReasonsToChoose/index';
+import AboutOurTravel from './AboutOurTravel/';
+import { withRouter } from 'react-router-dom';
 import './style.scss'
-import Video from './Video/index'
-import Reasons from './ReasonsToChoose/index'
 
 const About = ({lang}) => {
-    return <div className='contain flexible vertical aCenter'> 
+    return <div className='contain_vertical'> 
+        <AboutOurTravel lang={lang}/>
         <Reasons lang={lang}/>
         <Video lang={lang}/>
     </div>

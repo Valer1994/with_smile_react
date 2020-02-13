@@ -33,7 +33,16 @@ const languages =  {
         "date_":"Ամսատիվ",
         "review_":"Կարծիք",
         "rate_":"Գնահատական",
-     
+        "who_we_are":"ՈՎ ԵՆՔ ՄԵՆՔ",
+        "about_our_company":"ՄԵՐ ԿԱԶՄԱԿԵՐՊՈՒԹՅԱՆ ՄԱՍԻՆ",
+        "comparing_with_tadays_tour_companies_we_have_created_unique_and_officient":"Համեմատվելով այսօրվա տուրիստական կազմակերպությունների հետ` մենք ստեղծել ենք յուրահատուկ և արդյունավետ մոտեցման ձևեր",
+        "applying_to_our_tour_company_you_get_rid_of_any_risks_because_we_aim_to_make_your_rest":"Դիմելով մեր տուրիստական կազմակերպությանը դուք ազատվում եք ռիսկերից,քանի որ մենք ձգտում ենք դարձնել Ձեր հանգիստը տարբերվող և առանձնահատուկ:Խոստանում ենք տալ այն ամենը,ինչ ներկայացված է մեր էջում",
+        "efficency":"արդյունավետ",
+        "experience":"փորձ",
+        "security":"անվտանգ",
+        "transparency":"թափանցիկություն",
+        "simple":"պարզ",
+        "compliant":"զիջող",
     },
     ru: {
         "hi": "Здравствуй",
@@ -69,6 +78,16 @@ const languages =  {
         "date_":"Дата",
         "review_":"Отзывы",
         "rate_":"Оценка",
+        "who_we_are":"КТО МЫ ТАКИЕ",
+        "about_our_company":"ПРО НАШУ КОМПАНИЮ",
+        "comparing_with_tadays_tour_companies_we_have_created_unique_and_officient":"Сравнивая сегодняшние турагентства,мы придумали специфические и продуктивные формы подхода",
+        "applying_to_our_tour_company_you_get_rid_of_any_risks_because_we_aim_to_make_your_rest":"Обращаясь к нашей тур компании Вы избавляетесь от рисков,потому что мы стремимся сделать Ваш отдых специальным и неповторяющимся.Обещаем обеспечить всем,что представлен на нашей странице",
+        "efficency":"продуктивность",
+        "experience":"опыт",
+        "security":"безопасность",
+        "transparency":"прозрачность",
+        "simple":"ясный",
+        "compliant":"уступающий",
     },
     en: {
         "hi": "Hi",
@@ -104,7 +123,16 @@ const languages =  {
         "date_":"Date",
         "review_":"Review",
         "rate_":"Rate",
-        
+        "who_we_are":"WHO WE ARE",
+        "about_our_company":"ABOUT OUR COMPANY",
+        "comparing_with_tadays_tour_companies_we_have_created_unique_and_officient":"Comparing with today`s tour companies we have created unique and efficient ways of approach",
+        "applying_to_our_tour_company_you_get_rid_of_any_risks_because_we_aim_to_make_your_rest":"Applying to our tour company You get rid of any risks,because we aim to make your rest different and unique.We promise to give you everiting introduced in our page",
+        "efficency":"efficency",
+        "experience":"experience",
+        "security":"security",
+        "transparency":"transparency",
+        "simple":"simple",
+        "compliant":"compliant",
     }
 }
 

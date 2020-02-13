@@ -1,0 +1,14 @@
+.aboutOurTravel_contain {
+    width: 100%;
+    height: 700px;
+    background-image: url('../../../../images/BackgroundAbout.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 60%;
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-around;
+    div{
+        margin-left: 5%;
+    }
+}

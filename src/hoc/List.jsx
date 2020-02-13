@@ -1,9 +1,9 @@
 import React from 'react'
 
-const list = (props) => {
+const Aux = (props) => {
     return <div className={props.classes}>
         {props.children}
     </div>;
 };
 
-export default list
+export default Aux;

@@ -15,7 +15,7 @@ import {
   Blog,
   Contact,
   Home,
-  JoinUs,
+  SecondBlog,
   Plans
 } from './Components/Main'
 
@@ -71,7 +71,7 @@ const App = () => {
         <Contact lang={lang}/>
       </Route>
       <Route path='/:lang/join-us'>
-        <JoinUs lang={lang}/>
+        <SecondBlog lang={lang}/>
       </Route>
       <Route path='/:lang/plans'>
         <Plans lang={lang}/>

@@ -1,0 +1,37 @@
+
+.textAboutOurTravel{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h3{
+        text-align: start;
+        color: #F1481F;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 17px;
+        margin: 5px;
+    }
+    h1{
+        text-align: start;
+        color: #33406A;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 32px;
+        margin: 5px;
+        
+    }
+    h2{
+        text-align: start;
+        max-width: 634px;
+        color:#1D193B;
+        font-size: 14px;
+    }
+    p{
+        text-align: start;
+        max-width: 634px;
+        color: #7C7C7C;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}

@@ -4,4 +4,4 @@
 // export { default as use } from './use.png'
 // export { default as protect } from './protect.png'
 // export { default as affilate } from './affilate.png'
-export { default as icon } from './Icon.png'
+export { default as pic } from './pic.png'
