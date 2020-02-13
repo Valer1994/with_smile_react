@@ -1,20 +1,16 @@
-import React, { Component } from 'react';
-import Button from '../Button/';
-import BannerImg from '../../../../images/Bannerbg.png';
+import React from 'react';
+import Paper from '../../../Atoms/Paper';
 
 import './style.scss';
 
-const Banner = () => {
-    return <div className = 'flexible aCenter'>
-        <div className='Banner flexible vertical aStart'> 
-            <span className = 'BannerMiniTitle'>TRAVEL HYIP</span>
-            <span className = 'BannerBigTitle'>INVESTMENT</span>
-            <span className = 'BannerText'>A Profitable Platform For High-Margin <br/> Travel investment</span>
-            <Button />
-        </div>
-        <img className = 'BannerImg' src = {BannerImg}></img>
-    </div>
-
-}
+const Banner = ({
+    lang,
+    data,
+}) => (
+    <Paper>
+        <h1>{data}</h1>
+        <p></p>
+    </Paper>
+);
 
 export default Banner;

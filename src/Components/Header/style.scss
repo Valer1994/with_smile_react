@@ -2,14 +2,18 @@
 
 .Header{
     background-color: $main-color;
+    .logo{
+        margin-top: 15px;
+        width: 170px;
+        height: inherit;
+    }
     nav{
         ul{
             li{
                 list-style: none;
                 margin: 25px;
-                
                 a{
-                    color: $text-color;
+                    color: #33406A;
                     text-decoration: none;
                     text-transform: uppercase;
                     font-weight: 700;
