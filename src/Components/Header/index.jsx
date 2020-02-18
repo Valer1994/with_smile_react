@@ -26,8 +26,8 @@ const Header = ({lang}) => {
                         </NavLink>
                     </li>
                     <li className="flexible aCenter">
-                        <NavLink to={'/' + lang + '/plans'}>
-                            {selectLanguage(lang).Plans}
+                        <NavLink to={'/' + lang + '/tours'}>
+                            {selectLanguage(lang).Tours}
                         </NavLink>
                     </li>
                     <li className="flexible aCenter">
