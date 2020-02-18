@@ -5,6 +5,7 @@ const languages =  {
         "About": "Մեր Մասին",
         "Plans": "Ծրագրեր",
         "Blog":"Բլոգ",
+        "Tours":"Տուռեր",
         "Contact":"Կապ մեզ հետ",
         "JoinUs":"Միացեք մեզ",
         "our_amazing_features": "Մեր բացառիկ առանձնահատկությունները",
@@ -53,6 +54,7 @@ const languages =  {
         "Home": "Главний",
         "About": "О Нас",
         "Plans": "Планы",
+        "Tours":"Туры",
         "Blog":"Блог",
         "Contact":"Контакты",
         "JoinUs":"Присоединиться",
@@ -100,6 +102,7 @@ const languages =  {
     en: {
         "hi": "Hi",
         "Home": "Home",
+        "Tours":"Tours",
         "About": "About",
         "Plans": "Plans",
         "Blog":"Blog",

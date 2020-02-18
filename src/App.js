@@ -11,12 +11,12 @@ import {
 import { languages } from './config/config'
 
 import {
-  About,
   Blog,
-  Contact,
   Home,
+  Tours,
+  About,
+  Contact,
   SecondBlog,
-  Plans
 } from './Components/Main'
 
 import './App.scss';
@@ -33,11 +33,16 @@ import './App.scss';
 
 const App = () => {
   const location = useLocation()
+
   const history = useHistory()
+
   const pathname = location.pathname
+
   const langPathName = pathname.slice(1, 3)
+
   const [lang, setLang] = useState('en')
   console.log(pathname)
+
   useEffect(() => {
     if(languages[langPathName]) {
       history.push(pathname)
@@ -61,8 +66,8 @@ const App = () => {
       <Route path='/:lang/about'>
         <About lang={lang}/>
       </Route>
-      <Route path='/:lang/about'>
-        <About lang={lang}/>
+      <Route path='/:lang/tours'>
+        <Tours lang={lang}/>
       </Route>
       <Route path='/:lang/blog'>
         <Blog lang={lang}/>
@@ -72,9 +77,6 @@ const App = () => {
       </Route>
       <Route path='/:lang/join-us'>
         <SecondBlog lang={lang}/>
-      </Route>
-      <Route path='/:lang/plans'>
-        <Plans lang={lang}/>
       </Route>
     </Switch>
 
