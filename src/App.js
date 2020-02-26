@@ -17,6 +17,12 @@ import {
   About,
   Contact,
   SecondBlog,
+  SecureRelax,
+  ReliableStaff,
+  AvailablePrices,
+  TastyNationalFood,
+  PicturesquePalces,
+  ProfessionalService,
 } from './Components/Main'
 
 import './App.scss';
@@ -41,8 +47,7 @@ const App = () => {
   const langPathName = pathname.slice(1, 3)
 
   const [lang, setLang] = useState('en')
-  console.log(pathname)
-
+  
   useEffect(() => {
     if(languages[langPathName]) {
       history.push(pathname)
@@ -58,7 +63,7 @@ const App = () => {
   //   <Comp lang={lang}/>
   // </Route>)
   // })
-  console.log(lang)
+
   const routers = <Switch >
       <Route exact path='/:lang'>
         <Home lang={lang}/>
@@ -77,6 +82,24 @@ const App = () => {
       </Route>
       <Route path='/:lang/join-us'>
         <SecondBlog lang={lang}/>
+      </Route>
+      <Route path='/:lang/about1/available_prices'>
+        <AvailablePrices lang={lang}/>
+      </Route>
+      <Route path='/:lang/about2/proffesional_service'>
+        <ProfessionalService lang={lang}/>
+      </Route>
+      <Route path='/:lang/about3/secure_relax'>
+        <SecureRelax lang={lang}/>
+      </Route>
+      <Route path='/:lang/about4/reliable_staff'>
+        <ReliableStaff lang={lang}/>
+      </Route>
+      <Route path='/:lang/about5/picturesque_places'>
+        <PicturesquePalces lang={lang}/>
+      </Route>
+      <Route path='/:lang/about6/tasty_national_food'>
+        <TastyNationalFood lang={lang}/>
       </Route>
     </Switch>
 

@@ -1,4 +1,8 @@
 .contain_vertical{
+    background-image: url('../../../images/BackgroundAbout.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

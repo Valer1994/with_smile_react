@@ -1,15 +1,15 @@
 
     .contain{
-        margin-bottom: 80px;
+        margin-top: 50px;
         .textContainer{
-        width: 450px;
-        margin: 15px;
+        width: 50%;
+        margin: 25px;
             .preHeaderText{
                 color: #F1481F;
                 text-transform: uppercase;
                 font-weight: 600;
                 font-size: 17px;
-                margin: 5px;
+                margin-top: 25px;
             }
             h2{
                 color: #33406A;
@@ -27,9 +27,9 @@
         .allReasons{
             .picsContainers{
                 box-shadow: -1px 2px 21px -13px rgba(48,39,39,0.8);
+                background-color: #fff;
                 border-radius: 7px;
                 margin: 10px;
-                padding:60px 10px 0 10px;
                 max-width: 165px;
                 min-width: 165px;
                 min-height: 241px ;
@@ -51,13 +51,14 @@
             box-shadow: 2px 6px 35px -13px rgba(26,25,26,0.82);
         }
     }
-
     .mainVideo{
+        width: 70%;
         margin: 10px;
         iframe{
             box-shadow: -1px 3px 8px 5px rgba(217,210,217,0.8);
-            width: 600px;
-            height: 350px;
+            width: 70%;
+            min-height: 350px;
+            max-height: 600px;
             border-radius: 7px;
         }
     }
